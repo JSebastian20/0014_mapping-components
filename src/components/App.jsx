@@ -10,8 +10,8 @@ function App() {
       {contacts.map(contact => {
         return (
           <Card
-            key={contact.id}
-            id={contact.id}
+            key={contact.id} //Need a unique key
+            id={contact.id} //to show, must use other than "key"
             name={contact.name}
             img={contact.imgURL}
             tel={contact.phone}
